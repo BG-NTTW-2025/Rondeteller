@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <title>Rondeteller</title>
+<!DOCTYPE html>
+<html lang="nl"><head>
+
+
+  <meta charset="UTF-8"><title>Rondeteller</title>
+  
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -19,8 +20,8 @@
     }
 
     .ronde-cirkel {
-      width: 300px;
-      height: 300px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.1);
       display: flex;
@@ -56,7 +57,7 @@
     }
 
       #kaartRondesInput {
-      width: 400px; /* of een andere breedte naar wens */
+      width: 280px; /* of een andere breedte naar wens */
     }
 
 
@@ -85,9 +86,7 @@
   color: white;
 }
 
-  </style>
-</head>
-<body>
+  </style></head><body>
 
   <div class="ronde-cirkel" id="rondeWeergave">
     Ronde 1
@@ -101,14 +100,14 @@
   <div class="instellingen">
 
     Max. aantal rondes: 
-    <input type="number" id="maxRondeInput" value="20" onchange="updateMaxRonde(this.value)">
+    <input id="maxRondeInput" value="20" onchange="updateMaxRonde(this.value)" type="number">
 
     <br>
     Kaartuitgifte bij rondes (bijv. 10, 15):<br>
-    <input type="text" id="kaartRondesInput" value="10,15" onchange="updateKaartRondes(this.value)">
+    <input id="kaartRondesInput" value="10,15" onchange="updateKaartRondes(this.value)" type="text">
     <br>
     <label>
-      <input type="checkbox" id="geluidToggle" checked onchange="toggleGeluid()">
+      <input id="geluidToggle" checked="checked" onchange="toggleGeluid()" type="checkbox">
       Geluid aan
     </label>
     <div class="fout" id="foutMelding"></div>
@@ -221,11 +220,4 @@ function beveiligdeVolgendeRonde() {
 }
 
   </script>
-</body>
-</html>
-
-
-
-
-
-
+</body></html>
